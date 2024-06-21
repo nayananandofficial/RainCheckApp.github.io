@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainCheck App</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/logob.png" type="image/png">
+</head>
+<body class="<%= willRain ? 'rainy' : willBeCloudy ? 'cloudy' : 'sunny' %>">
+    <div class="container">
+        <% if (weather && weather.city) { %>
+            <h1>Weather Forecast for <%= weather.city.name %></h1>
+            <div class="weather-result">
+                <% if (willRain) { %>
+                    <h2>Tomorrow you can expect <%= weather.weather[0].description %> in <%= weather.city.name %>.</h2>
+                <% } else if (willBeCloudy) { %>
+                    <h2>Tomorrow will be cloudy in <%= weather.city.name %>.</h2>
+                <% } else { %>
+                    <h2>Tomorrow will be a sunny day in <%= weather.city.name %>.</h2>
+                <% } %>
+            </div>
+        <% } else { %>
+            <h1>Weather Forecast</h1>
+            <p>No weather data available.</p>
+        <% } %>
+        <form action="/" method="POST">
+            <input type="text" name="city" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <% if (error) { %>
+            <p class="error"><%= error %></p>
+        <% } %>
+    </div>
+</body>
+</html>
