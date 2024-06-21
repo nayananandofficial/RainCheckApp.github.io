@@ -13,20 +13,26 @@ This is a simple weather application that checks if it will rain tomorrow in a s
 2. Install dependencies:
     ```bash
     npm install
-    ```
+    ```````````
 
-3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
-    ```
+3. Obtain an OpenWeatherMap API key:
+    - Sign up for a free account at [OpenWeatherMap](https://home.openweathermap.org/users/sign_up).
+    - Log in and navigate to the [API keys section](https://home.openweathermap.org/api_keys).
+    - Click "Create Key", name your key, and generate it.
+    - Copy your API key.
+
+
+4. Create a `.env` file in the root directory and add your API key:
+    `````````````
     WEATHER_API_KEY=your_openweathermap_api_key
-    ```
+    `````````````
 
-
-4. Start the server:
+5. Start the server:
     ```bash
     npm run dev
-    ```
+    ```````````
 
-5. Open your browser and go to `http://localhost:3000`.
+6. Open your browser and go to `http://localhost:3000`.
 
 ## Usage
 
