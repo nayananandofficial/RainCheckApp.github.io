@@ -1,4 +1,4 @@
-# Weather App
+# RainCheck App
 
 This is a simple weather application that checks if it will rain tomorrow in a specified location.
 
