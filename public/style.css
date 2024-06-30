@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -21,14 +22,18 @@ body {
 .container {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     padding: 30px;
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     text-align: center;
     position: relative;
     z-index: 2;
+    animation: glow 5s infinite;
 }
+
+@keyframes glow {
+    50% {box-shadow: 0px 0px 30px rgb(255, 255, 255);}
+  }
 
 h1 {
     margin-bottom: 20px;
@@ -65,7 +70,7 @@ button {
     border-radius: 30px;
     color: white;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: 0.3s ease, transform 0.2s ease;
     width: 100%;
     max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -89,14 +94,53 @@ button:active {
     color: red;
 }
 
+footer{
+text-align: center;
+}
+
 .sunny {
     background-image: url('/images/sunny.jpg');
 }
 
 .cloudy {
-    background-image: url('/images/cloudy.gif');
+    background-image: url('/images/anim-cloudy.jpg');
 }
 
 .rainy {
-    background-image: url('/images/rainy3.gif');
+    background-image: url('/images/anim-rainy.jpg');
 }
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ccc;
+    opacity: 50%;
+}
+/* Media Queries for Responsiveness */
+ @media (min-width: 300px){
+    .container {
+        max-width: 250px;
+        padding: 30px;
+    }    
+}
+
+@media (min-width: 600px) {
+    .container {
+        max-width: 400px;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 400px;
+    }
+} 
