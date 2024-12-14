@@ -2,6 +2,9 @@
 
 This is a simple weather application that checks if it will rain tomorrow in a specified location.
 
+##App preview
+<https://raincheckapp.onrender.com>
+
 ## Setup
 
 1. Clone the repository:
