@@ -1,46 +1,58 @@
-# RainCheck App
+# 🌦️ RainCheck App
 
-This is a simple weather application that checks if it will rain tomorrow in a specified location.
+A simple and clean weather-checking app that gives you current weather data based on your location or input. Built using Node.js, Express, and the OpenWeather API.
 
-## App preview
-<https://raincheckapp.onrender.com>
+## 🚀 Features
 
-## Setup
+- Get current weather by city name
+- Fetches real-time data from OpenWeather API
+- Responsive and minimal UI
+- Deployed using Render
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/nayananandofficial/RainCheckApp.github.io.git
-    cd "My Weather App"
-    ```
+## 🛠️ Tech Stack
 
-2. Install dependencies:
-    ```bash
-    npm install
-    ```````````
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **API**: OpenWeather API
+- **Hosting**: Render
 
-3. Obtain an OpenWeatherMap API key:
-    - Sign up for a free account at [OpenWeatherMap](https://home.openweathermap.org/users/sign_up).
-    - Log in and navigate to the [API keys section](https://home.openweathermap.org/api_keys).
-    - Click "Create Key", name your key, and generate it.
-    - Copy your API key.
+## 📸 Screenshots
 
+![App Screenshot](screenshot.png) <!-- Replace with actual screenshot if you have one -->
 
-4. Create a `.env` file in the root directory and add your API key:
-    `````````````
-    WEATHER_API_KEY=your_openweathermap_api_key
-    `````````````
+## 🧑‍💻 How to Run Locally
 
-5. Start the server:
-    ```bash
-    npm run dev
-    ```````````
+1. Clone the repo  
+```bash
+git clone https://github.com/nayananandofficial/raincheck.git
+```
 
-6. Open your browser and go to `http://localhost:3000`.
+2. Navigate to project folder
+   ```bash
+   cd raincheck
+   ```
+   
+3. Install dependencies
+   ```bash
+   npm install
+   ```
 
-## Usage
+4. Create a ``.env`` file and add your OpenWeather API key
+   ```bash
+   API_KEY=your_api_key_here
+   ```
 
-Enter the name of a city to check if it will rain tomorrow in that location.
+5. Run the app
+   ```bash
+   node app.js
+   ```
 
-## License
+6. Visit
+   ```bash
+   http://localhost:3000
+   ```
 
-This project is licensed under the MIT License.
+📬 Contact
+Made with ❤️ by Nayan Anand
+
+If you find this helpful or want to collaborate, feel free to connect or drop a ⭐️!
