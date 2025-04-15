@@ -19,7 +19,7 @@ A simple and clean weather-checking app that gives you current weather data base
 ## 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/d0281896-5f46-4c38-8940-a653cd193f54)
 ![image](https://github.com/user-attachments/assets/df373632-7456-4a9f-b0e2-c49082f343f4)
-![image](https://github.com/user-attachments/assets/f4537c05-dc15-4af3-8618-0ffac4505359)
+![WhatsApp Image 2025-04-15 at 18 55 55_598a2463](https://github.com/user-attachments/assets/c7cb5132-2207-4831-bd73-a94b61e3b69a)
 
 
 ## 🧑‍💻 How to Run Locally
