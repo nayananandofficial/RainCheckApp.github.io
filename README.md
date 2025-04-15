@@ -23,9 +23,9 @@ A simple and clean weather-checking app that gives you current weather data base
 ## 🧑‍💻 How to Run Locally
 
 1. Clone the repo  
-```bash
-git clone https://github.com/nayananandofficial/raincheck.git
-```
+   ```bash
+   git clone https://github.com/nayananandofficial/raincheck.git
+   ```
 
 2. Navigate to project folder
    ```bash
